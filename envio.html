@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquí Store Online</title>    
+    <link rel="stylesheet" href="./assets/css/04-enviar.css">  
+    <link rel="stylesheet" href="./assets/css/03-main.css">
+    <link rel="stylesheet" href="./assets/css/carrito.css">  
+    <script src="./assets/js/enviar.js"></script>
+    <script src="./assets/js/main.js"></script>
+    
+</head>
+
+   
+</head>
+<p></p>
+<body>
+    <h1>Información de Envío</h1>
+    <div id="informacion-carrito"></div>
+
+ 
+    <div id="seccion-pago">
+        <h2>Confirmar Método de Pago</h2>
+        <label>
+            <input type="radio" name="metodoPago" value="tarjeta" onchange="mostrarOcultarCampos('tarjeta')"> Tarjeta
+            <input type="radio" name="metodoPago" value="transferencia" onchange="mostrarOcultarCampos('transferencia')"> Transferencia
+            
+        </label>
+        <div id="datos-tarjeta" style="display: none;">
+            <h3>Ingrese los datos de la tarjeta:</h3>
+            <label>Número de Tarjeta: <input type="text" id="numeroTarjeta"></label><br>
+            <label>Código de Seguridad: <input type="text" id="codigoSeguridad"></label><br>
+            <label>Número de Cuotas: <input type="text" id="numCuotas"></label>
+            <label>Valor A Pagar: <input type="text" id="valorPagar"></label>
+        </div>
+    
+        <div id="seleccion-banco" style="display: none;">
+            <h3>Seleccione el banco de su preferencia:</h3>
+            <select id="lista-bancos">
+                <option value="banco1">Seleccione su Banco</option>
+                <option value="banco2">Bancolombia</option>
+                <option value="banco7">Davivienda</option>
+                <option value="banco3">Banco De Bogota</option>
+                <option value="banco4">Banco ITAU</option>
+                <option value="banco5">Nequi</option>
+                <option value="banco6">Daviplata</option>
+            </select><br>
+            <label>Valor a Pagar: <input type="text" id="valorPagar"></label>
+        </div>
+    </div>
+    
+    
+    <div id="seccion-direccion">
+        <h2>Confirmar Dirección de Envío</h2>
+        <label>Dirección: <input type="text" id="direccion"></label><br>
+        <button onclick="guardarDireccion()">Guardar Dirección</button>
+        <p id="mensaje-direccion"></p>
+    </div>
+        <button id="btn-enviar" onclick="enviarConfirmacion()">Enviar</button>
+        <button id="btn-regresar" onclick="regresarAIndex()">Regresar</button>
+   
+    
+</body>
+</html>

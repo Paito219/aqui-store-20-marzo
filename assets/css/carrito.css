@@ -1,0 +1,121 @@
+/* Section Carrito */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu { 
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: #FFFFFF;
+}
+
+.borrar {
+    background-color: #52f009;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    flex-basis: 50%;
+}
+
+.header-txt span {
+    font-size: 55px;
+    color: #8DC84B;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 1,7;
+    color: #333128;
+    margin-bottom: 25px;
+}
+
+.header-txt h2 {
+    font-size: 50px; 
+    line-height: 1;
+    color: #6b6d6b;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 16px;
+    color: #181713;
+    margin-bottom: 45px;
+}
+
+.btn-2 {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color:#2A7AE4;
+}
+.a {
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.733);
+	cursor: pointer;
+}
+
+/* Sergio Resultado Busqueda*/
+.imagen-resultados {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+}
+.resultado-item {
+    width: 200px;  
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd; 
+    
+  }
+  #resultados {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 

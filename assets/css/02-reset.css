@@ -1,0 +1,61 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+h1, h2, h4, h5, h6 {
+    margin: auto;
+    padding: 0;
+    color: rgb(14, 7, 80);
+    gap: 50px;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+
+
+ul, li {
+    padding: 0;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #333128;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+
+/* Carlos R */
+
+h3 {
+    font-size: 17px;
+    color: #0e38f3;
+    text-transform: capitalize;
+}
+
+.btn-1 {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+    
+}
+
+.btn-1:hover {
+    box-shadow: 5px 5px 10px   black;
+	cursor: pointer;
+}
+
+
